@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="titulo" >HOLA MUNDO</h1>
+
+    <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam, temporibus! Iste quos blanditiis expedita quo temporibus similique eaque eos aperiam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cum esse quo eum nemo laborum dolor excepturi ex ut tempore ea non impedit exercitationem assumenda atque, animi voluptatum consequuntur nostrum?</p>
+</body>
+<script>
+
+//VARIABLES Y CONSTANTES
+
+let nombreVariable = 'Hola mundo';
+//var nombreVariable = 'Hola mundo'
+const nombreConstante = "Soy una constante";
+
+nombreVariable = nombreVariable + ", " + nombreConstante;
+
+//console.log(5+5) SUMA
+//console.log(5-5) RESTA
+//console.log(5*5) MULTIPLICACION
+//console.log(5%5) RESTO
+
+//console.log(nombreVariable)
+
+//TIPOS DE DATOS
+
+const string = 'cadena de caracteres';
+const string2= "cadena de caracteres";
+const string3 = `Cadena de caracteres. ${nombreVariable}`;
+nombreVariable = 'hola';
+//const signo = '$';
+//const precio = '1000'
+
+//console.log(string3);
+
+const number = 10;
+const booleano = true;
+
+const array = ["string", 10, ['dato', 9], false, 'otro string']
+
+array.push("dato pusheado")
+
+//array[6]= 6;
+
+//console.log(array[2][1])
+//console.log(array.length)
+
+const objeto = {
+    clave: 'valor',
+    nombre: 'Juan'
+}
+
+//console.log(objeto.nombre)
+//console.log(objeto['clave'])
+
+//CONDICIONAL
+if( 10 == '10' ) {
+    //console.log("VERDADERO")
+}
+
+//CICLOS
+
+const semana = ['lunes', 'martes', 'miercoles', 'jueves', 'viernes', 'sabado', 'domingo']
+
+for( let i = 0; i < semana.length; i++){
+    //console.log(semana[i])
+}
+
+let i = 0;
+
+while(i < 10){
+    //console.log(i);
+    i++;
+}
+
+/*
+    filter
+    map
+
+    find
+
+    foreach
+
+    for in
+    for off
+*/
+/*const objEjemplo = {
+    nombre: 'Juan', 
+    edad: 59,
+    empleo: 'Junto latitas, cirujano'
+}
+*/
+/*for( item of semana){
+    console.log(item)
+}*/
+
+//for(item in objeto){
+   // console.log(objeto[item])
+//}
+
+
+//EJERCICIO
+
+//let consulta = prompt("Que edad tenes?");
+
+//consulta = Number(consulta)
+
+//console.log(consulta);
+
+/*if(consulta >= 18){
+    console.log('Bienvenido')
+}
+else{
+    console.log('Tomatela te dije')
+}*/
+
+//FUNCIONES
+
+/*function nombreFuncion(argumento, argumento2){
+    console.log('Soy ' + argumento)
+    console.log(argumento2)
+}
+
+nombreFuncion('parametro', 'segundo parametro')
+nombreFuncion('Soy otro parametro')
+nombreFuncion(10)*/
+
+/*const arrowFunction = (argumento) => {console.log('Soy ' + argumento)}
+
+arrowFunction('parametro', 'seguno parametro')
+arrowFunction('Soy otro parametro')
+arrowFunction(10)*/
+
+//DOM
+
+const tituloId = document.getElementById('titulo')
+const parrafoClas = document.getElementsByClassName('parrafo')
+
+console.log('tituloId')
+
+</script>
+</html>
